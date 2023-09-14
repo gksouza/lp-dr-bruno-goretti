@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  text-decoration: none;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-family: 'Mulish', sans-serif;
+  font-size: 62.5%;
+  --bgc-header-footer:hsl(195, 91%, 25%);
+  --bgc-search:hsl(195, 46%, 40%);  
+  --bgc-main:hsl(196, 100%, 98%);
+  --color-white:hsl(0, 0%, 100%);
+  --color-title:hsl(240, 6%, 13%);
+  --color-text:hsl(240, 5%, 7%);
+}
+
+html, body, input, button {
+  font-family: 'Mulish', sans-serif;  
+}
+
+body {
+  font-size: 1.6rem;
+  color: var(--color-text);
+  font-weight: 400;
+}
+
+h1, h2, h3, h4 {    
+  color: var(--color-title);
+  font-weight: 700;  
+}
+
+.title h3 {  
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.title h4 {  
+  padding-bottom: 1rem;  
+}
+
+p {
+  color: var(--color-text);
+}
+
+#comunicado {
+  color: hsl(0, 100%, 50%);
+}
+
+header, footer {
+  background-color: var(--bgc-header-footer);  
+}
+
+header {  
+  width: 100%;
+  height: 7.2rem;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 1.2rem 2.8rem;
+}
+
+header form {  
+  flex: 1;   
+}
+
+.input-wrapper label {  
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;   
+}
+
+.input-wrapper input {
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
+  border-radius: .4rem;
+  border: none;
+  color: var(--color-white);
+  font-weight: 600;
+  background-color: var(--bgc-search);
+}
+
+input::placeholder {  
+  color: var(--color-white);  
+  padding: .3rem .3rem;  
+}
+
+input #search {
+  border: none;
+}
+
+#avatar,
+#logo {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  transition: .5s;  
+}
+
+label,
+footer p {  
+  color: var(--color-white);
+  font-weight: 600;
+}
+
+#search {  
+  background-color: var(--bgc-search);
+}
+
+main {  
+  background-color: var(--bgc-main);  
+}
+
+section {  
+  display: flex;
+  flex-direction: column;
+  gap: 3.1rem; 
+}
+
+#consult_1 {
+  width: 100%;  
+}
+
+.recep img {
+  width: 50%;
+  transition: .6s;
+  border-radius: .5rem;
+}
+
+.recep img:hover {
+  cursor: pointer;
+  background-color: var(--bgc-search);
+  transform: scale(1.1); 
+}
+
+.title, ul {
+  padding: 0 2.4rem;
+}
+
+.title h1 {
+  font-size: 2.4rem;
+  line-height: 3.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.title p {  
+  font-weight: 400; 
+}
+
+.title span {  
+  font-weight: 700;
+}
+
+section p, li {
+  line-height: 2.2rem;
+  padding-bottom: 2.4rem;
+}
+
+sidebar {  
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  margin-inline: 2.4rem;
+}
+
+.card-article,
+.card-depo,
+.recep {  
+  display: flex;
+  gap: 1.6rem;
+  max-width: 38.4rem;
+}
+
+.card-article {
+  margin-top: 2rem;
+}
+
+.card-article img {
+  width: 15rem;
+  height: 10rem;
+  object-fit: cover;  
+  border-radius: .5rem;
+}
+
+.depoiment h2 {
+  padding-bottom: 1rem;
+}
+
+.depoiment h5,
+.card-depo {
+  margin-bottom: 2rem;
+}
+
+.card-depo img {   
+  height: 6.4rem; 
+  object-fit: contain;  
+}
+
+#icon {  
+  margin-top: 2rem; 
+}
+
+.card-depo p {
+  line-height: 2.4rem;
+}
+
+.text-wrapper #stars {  
+  width: 15rem;
+  height: 4rem;
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+  width: 21.5rem;
+}
+
+.text-wrapper a h3 {
+  color: var(--color-title);
+  font-weight: 700;
+  font-size: 1.6rem;  
+}
+
+footer p, #gk {
+  background-color: var(--bgc-header-footer);
+  padding: 1.6rem;
+  text-align: center;
+  color: var(--color-white);
+  font-weight: 600;
+  margin-top: 3.9rem;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    width: 100%;
+    display: flex;
+    gap: 3.4rem;
+    margin: 0 auto;
+    padding: 4.4rem 10.9rem 0;
+  }
+
+  header {
+    padding: 1.2rem 11.2rem;
+  }
+
+  main {
+    padding-bottom: 3.9rem;
+  }
+
+  .title, section p {
+    padding: 0;
+  }
+
+  .title h3 {
+    font-size: 1.6rem;    
+  }
+
+  .recep {  
+    display: flex;
+    gap: 4rem;
+    max-width: 38.2rem;  
+  }
+  
+  .recep img {
+    width: 50%;
+  }
+
+  sidebar {
+    margin-inline: 0;
+  }  
+ 
+  .title p:nth-last-child(1) {
+    margin-top: 1rem;
+  }
+
+  .input-wrapper input {
+    width: 15%;
+    text-align: center;   
+  }
+}
