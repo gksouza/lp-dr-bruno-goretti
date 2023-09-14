@@ -278,14 +278,15 @@ footer p, #gk {
     font-size: 1.6rem;    
   }
 
-  .recep {  
+  .recep {    
     display: flex;
-    gap: 4rem;
+    gap: 5.2rem;
     max-width: 38.2rem;
   }
   
-  .recep img {
+  .recep img {    
     width: 50%;
+    justify-content: center;
   }
 
   sidebar {
