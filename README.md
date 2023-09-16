@@ -1,6 +1,6 @@
 # Landing Page Dr. Bruno Goretti
 
-## Meu primeiro projeto próprio 🚀
+## Meu primeiro projeto profissional 🚀
 
 👩🏽‍💻 Acesse o link do projeto em **About**
 
