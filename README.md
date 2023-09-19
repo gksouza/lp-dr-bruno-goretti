@@ -4,7 +4,7 @@
 
 👩🏽‍💻 Acesse o link do projeto em **About**
 
-![preview](./assets/preview2.png)
+![preview](./assets/preview.png)
 
 ## 🔰 Tecnologias
 
